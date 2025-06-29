@@ -12,9 +12,9 @@ export default function Clock() {
     }, []);
 
     return (
-        <div className="flex gap-2 items-center text-[128px] font-bold leading-none text-white">
+        <div className="flex gap-2 items-center text-[260px] font-bold leading-none text-white">
             <span>{padStart(date.getHours())}</span>
-            <div className="animate-pulse text-[100px] text-white/50">:</div>
+            <div className="animate-pulse text-[220px] text-white/50">:</div>
             <span>{padStart(date.getMinutes())}</span>
         </div>
     )

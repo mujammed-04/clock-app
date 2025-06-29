@@ -18,7 +18,7 @@ export default function DigitalClock() {
                 {DAYS.map((day) => (
                     <div
                         key={day}
-                        className={`text-md font-bold leading-none ${date.getDay() === DAYS.indexOf(day) ? 'text-white' : 'text-white/50'}`}
+                        className={`text-lg font-bold leading-none ${date.getDay() === DAYS.indexOf(day) ? 'text-white' : 'text-white/50'}`}
                     >{day}</div>
                 ))}
             </div>
