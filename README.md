@@ -42,7 +42,33 @@ Create a production build:
 npm run build
 ```
 
+For static export (GitHub Pages):
+
+```bash
+npm run build:static
+```
+
 ## Deployment
+
+### GitHub Pages (Static Export)
+
+The project is configured for GitHub Pages deployment with static export. The CI/CD pipeline will automatically build and deploy to GitHub Pages when you push to the main branch.
+
+**Requirements:**
+
+- Enable GitHub Pages in your repository settings
+- Set the source to "GitHub Actions"
+
+### Vercel (SSR Support)
+
+For server-side rendering support, deploy to Vercel:
+
+1. Connect your repository to Vercel
+2. Add the following secrets to your GitHub repository:
+    - `VERCEL_TOKEN`
+    - `VERCEL_ORG_ID`
+    - `VERCEL_PROJECT_ID`
+3. Use the `ci-cd-vercel.yml` workflow
 
 ### Docker Deployment
 

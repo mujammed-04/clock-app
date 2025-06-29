@@ -31,8 +31,8 @@ jobs:
             - name: Install dependencies
               run: yarn install --frozen-lockfile
 
-            - name: Build with Vite
-              run: yarn build
+            - name: Build with React Router
+              run: yarn build:static
 
             - name: Configure GitHub Pages
               uses: actions/configure-pages@v5
