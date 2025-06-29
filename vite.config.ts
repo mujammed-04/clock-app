@@ -4,6 +4,7 @@ import { defineConfig } from 'vite';
 import tsconfigPaths from 'vite-tsconfig-paths';
 
 export default defineConfig({
-	build: { outDir: 'dist' },
+	base: '/clock-app/',
+	build: { outDir: 'build/client' },
 	plugins: [tailwindcss(), reactRouter(), tsconfigPaths()],
 });

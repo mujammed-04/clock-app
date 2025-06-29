@@ -1,5 +1,5 @@
 import DigitalClock from "~/widgets/DigitalClock";
-import type { Route } from "../+types/home";
+import type { Route } from "../../../.github/workflows/.react-router/types/app/pages/+types/home";
 
 export function meta({ }: Route.MetaArgs) {
     return [
